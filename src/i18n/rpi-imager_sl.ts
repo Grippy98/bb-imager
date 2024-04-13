@@ -108,8 +108,8 @@
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="670"/>
-        <source>Controlled Folder Access seems to be enabled. Please add both rpi-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
-        <translation>Izgleda, da jevklopljen nadzor dostopa do map. Prosim dodajte oba rpi-imager.exe in fat32format.exe na seznam dovoljenih aplikacij in poizkusite znova.</translation>
+        <source>Controlled Folder Access seems to be enabled. Please add both bb-imager.exe and fat32format.exe to the list of allowed apps and try again.</source>
+        <translation>Izgleda, da jevklopljen nadzor dostopa do map. Prosim dodajte oba bb-imager.exe in fat32format.exe na seznam dovoljenih aplikacij in poizkusite znova.</translation>
     </message>
     <message>
         <location filename="../downloadthread.cpp" line="677"/>
