@@ -528,7 +528,7 @@
     <message>
         <location filename="../main.qml" line="119"/>
         <location filename="../main.qml" line="481"/>
-        <source>Raspberry Pi Device</source>
+        <source>Beagle Board</source>
         <translation>라즈베리파이(Raspberry Pi) 디바이스</translation>
     </message>
     <message>

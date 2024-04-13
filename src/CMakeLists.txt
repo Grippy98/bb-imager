@@ -3,7 +3,7 @@
 
 cmake_minimum_required(VERSION 3.9.4)
 OPTION (ENABLE_CHECK_VERSION "Check for version updates" ON)
-OPTION (ENABLE_TELEMETRY "Enable sending telemetry" ON)
+OPTION (ENABLE_TELEMETRY "Enable sending telemetry" OFF)
 OPTION (DRIVELIST_FILTER_SYSTEM_DRIVES "Filter System drives from displayed drives" ON)
 
 project(bb-imager LANGUAGES CXX C)
@@ -135,13 +135,13 @@ endif()
 #    i18n/bb-imager_ru.ts i18n/bb-imager_es.ts i18n/bb-imager_uk.ts i18n/bb-imager_zh-TW.ts
 #    i18n/bb-imager_pl.ts)
 #qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TRANSLATIONS})
-if (Qt5_FOUND)
-    qt5_add_translation(QM_FILES ${TRANSLATIONS})
-else()
-    qt_add_translation(QM_FILES  ${TRANSLATIONS})
-endif()
-configure_file(i18n/translations.qrc "${CMAKE_CURRENT_BINARY_DIR}" COPYONLY)
-set(SOURCES ${SOURCES} ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc ${QM_FILES})
+#if (Qt5_FOUND)
+    #qt5_add_translation(QM_FILES ${TRANSLATIONS})
+#else()
+    #qt_add_translation(QM_FILES  ${TRANSLATIONS})
+#endif()
+#configure_file(i18n/translations.qrc "${CMAKE_CURRENT_BINARY_DIR}" COPYONLY)
+#set(SOURCES ${SOURCES} ${CMAKE_CURRENT_BINARY_DIR}/translations.qrc ${QM_FILES})
 
 if (WIN32)
     # Adding WIN32 prevents a console window being opened on Windows

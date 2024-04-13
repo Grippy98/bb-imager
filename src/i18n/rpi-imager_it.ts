@@ -477,7 +477,7 @@ Aggiungi sia &apos;bb-imager.exe&apos; che &apos;fat32format.exe&apos; all&apos;
     <message>
         <location filename="../main.qml" line="119"/>
         <location filename="../main.qml" line="481"/>
-        <source>Raspberry Pi Device</source>
+        <source>Beagle Board</source>
         <translation>Dispositivo Raspberry Pi</translation>
     </message>
     <message>

@@ -19,7 +19,7 @@ ApplicationWindow {
     minimumWidth: imageWriter.isEmbeddedMode() ? -1 : 680
     minimumHeight: imageWriter.isEmbeddedMode() ? -1 : 420
 
-    title: qsTr("Raspberry Pi Imager v%1").arg(imageWriter.constantVersion())
+    title: qsTr("BeagleBoard Imager v%1").arg(imageWriter.constantVersion())
 
     FontLoader {id: roboto;      source: "fonts/Roboto-Regular.ttf"}
     FontLoader {id: robotoLight; source: "fonts/Roboto-Light.ttf"}
@@ -89,7 +89,7 @@ ApplicationWindow {
         }
 
         Rectangle {
-            color: "#cd2355"
+            color: "#aa5137"
             implicitWidth: window.width
             implicitHeight: window.height * (1 - 1/4)
 
@@ -116,7 +116,7 @@ ApplicationWindow {
                     Text {
                         id: text0
                         color: "#ffffff"
-                        text: qsTr("Raspberry Pi Device")
+                        text: qsTr("Beagle Board")
                         Layout.fillWidth: true
                         Layout.preferredHeight: 17
                         Layout.preferredWidth: 100
@@ -478,7 +478,7 @@ ApplicationWindow {
             spacing: 10
 
             Text {
-                text: qsTr("Raspberry Pi Device")
+                text: qsTr("Beagle Board")
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
                 Layout.fillWidth: true
